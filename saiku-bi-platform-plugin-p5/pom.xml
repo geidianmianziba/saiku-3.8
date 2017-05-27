@@ -8,7 +8,7 @@
 	<artifactId>saiku-bi-platform-plugin-p5</artifactId>
 	<packaging>jar</packaging>
 	<version>3.8-RC5</version>
-	<name>saiku biserver plugin</name>
+	<name>saiku biserver plugin p5</name>
 
 	<build>
 		<resources>
@@ -345,7 +345,7 @@
 		</plugins>
 	</build>
 	<repositories>
-		<repository>
+		<!--<repository>
 			<id>Analytical Labs Repo</id>
 			<name>Analytical Labs Repo-releases</name>
 			<url>http://repo.meteorite.bi/content/repositories/alabs-release-local/</url>
@@ -366,7 +366,7 @@
 		<repository>
 			<id>pentaho-snapshot</id>
 			<url>http://nexus.pentaho.org/content/repositories/public-snapshots/</url>
-		</repository>
+		</repository>-->
 
 		<repository>
 			<id>central</id>
@@ -454,7 +454,6 @@
 		<dependency>
 			<groupId>pentaho</groupId>
 			<artifactId>mondrian</artifactId>
-            <version>3.6.7</version>
 		</dependency>
 		<dependency>
 			<groupId>eigenbase</groupId>

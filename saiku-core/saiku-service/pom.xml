@@ -153,10 +153,10 @@
         </plugins>
     </build>
     <dependencies>
-        <dependency>
+       <!-- modified by gxy <dependency>
             <groupId>org.saiku</groupId>
             <artifactId>saiku-query</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.saikuanalytics</groupId>
             <artifactId>saiku-olap-util</artifactId>

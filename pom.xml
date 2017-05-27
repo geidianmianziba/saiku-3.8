@@ -52,15 +52,15 @@
         <jbehave.version>3.9.3</jbehave.version>
     </properties>
     <pluginRepositories>
-        <pluginRepository>
+        <!--<pluginRepository>
             <id>Analytical Labs Plugin Repo</id>
             <name>Analytical Labs Repo-releases</name>
             <url>http://repo.meteorite.bi/content/repositories/alabs-release-local/</url>
-        </pluginRepository>
+        </pluginRepository>-->
     </pluginRepositories>
 
     <repositories>
-        <repository>
+        <!--<repository>
             <id>Analytical Labs Repo</id>
             <name>Analytical Labs Repo-releases</name>
             <url>http://repo.meteorite.bi/content/repositories/alabs-release-local/</url>
@@ -81,7 +81,7 @@
         <repository>
             <id>pentaho-snapshot</id>
             <url>http://nexus.pentaho.org/content/repositories/public-snapshots/</url>
-        </repository>
+        </repository>-->
         <!--<repository>
             <id>atlassian2</id>
             <url>http://repository.opencastproject.org/</url>
@@ -105,6 +105,7 @@
             </snapshots>
         </repository>
 
+
         <repository>
             <id>atlassian</id>
             <name>Atlassian Public</name>
@@ -113,6 +114,21 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+        </repository>
+
+        <!-- 本地maven仓库服务器 -->
+        <repository>
+            <id>dell-PC</id>
+            <name>dell-PC-releases</name>
+            <url>http://localhost:8081/artifactory/libs-release-local/</url>
+        </repository>
+
+        <!-- pentaho -->
+        <repository>
+            <id>pentaho</id>
+            <name>Pentaho repository</name>
+            <url>http://repository.pentaho.org/artifactory/repo</url>
+            <layout>default</layout>
         </repository>
     </repositories>
     <build>
@@ -178,6 +194,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>license-maven-plugin</artifactId>
+                <version>1.9</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.rat</groupId>
@@ -419,7 +436,7 @@
             <dependency>
                 <groupId>org.olap4j</groupId>
                 <artifactId>olap4j</artifactId>
-                <version>TRUNK-SNAPSHOT</version>
+                <version>1.2.0</version>
             </dependency>
             <dependency>
                 <groupId>org.mongodb</groupId>
@@ -524,12 +541,12 @@
                 <version>1.7</version>
             </dependency>
             <dependency>
-                <groupId>batik</groupId>
+                <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-transcoder</artifactId>
                 <version>1.7</version>
             </dependency>
             <dependency>
-                <groupId>batik</groupId>
+                <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-ext</artifactId>
                 <version>1.7</version>
             </dependency>
@@ -640,11 +657,11 @@
                 <version>${spring.version}</version>
             </dependency>
             <!-- Batik/SVG -->
-            <dependency>
+            <!--<dependency>
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-transcoder</artifactId>
                 <version>1.7</version>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-codec</artifactId>
@@ -841,7 +858,7 @@
             <dependency>
                 <groupId>pentaho</groupId>
                 <artifactId>cpf-core</artifactId>
-                <version>5.2.0.2-84</version>
+                <version>5.4.0.4-149</version>
                 <exclusions>
                     <exclusion>
                         <groupId>janino</groupId>
@@ -852,7 +869,7 @@
             <dependency>
                 <groupId>pentaho</groupId>
                 <artifactId>cpf-pentaho5</artifactId>
-                <version>5.2.0.2-84</version>
+                <version>5.4.0.4-149</version>
                 <exclusions>
                     <exclusion>
                         <groupId>pentaho</groupId>
@@ -983,7 +1000,7 @@
             <dependency>
                 <groupId>org.apache.pdfbox</groupId>
                 <artifactId>pdfbox-app</artifactId>
-                <version>2.0.0-SNAPSHOT</version>
+                <version>2.0.0</version>
             </dependency>
             <dependency>
                 <groupId>pentaho</groupId>
