@@ -36,6 +36,7 @@
                 <version>2.12.4</version>
                 <configuration>
                     <argLine>-Xmx512m</argLine>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
             <plugin>
@@ -51,9 +52,9 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>mondrian-data-foodmart-hsql</groupId>
-                                    <artifactId>mondrian-data-foodmart-hsql</artifactId>
-                                    <version>0.1</version>
+                                    <groupId>pentaho</groupId>
+                                    <artifactId>mondrian-data-foodmart-hsqldb</artifactId>
+                                    <version>0.2</version>
                                     <type>jar</type>
                                     <outputDirectory>target/</outputDirectory>
                                 </artifactItem>
@@ -153,8 +154,8 @@
         </plugins>
     </build>
     <dependencies>
-       <!-- modified by gxy <dependency>
-            <groupId>org.saiku</groupId>
+       <!--<dependency>
+            <groupId>org.saikuanalytics</groupId>
             <artifactId>saiku-query</artifactId>
         </dependency>-->
         <dependency>
